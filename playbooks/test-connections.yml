@@ -1,0 +1,7 @@
+-name : test connection
+ hosts : all
+ tasks :
+    -name : demo task
+     debug :
+      msg:"Hello"
+
