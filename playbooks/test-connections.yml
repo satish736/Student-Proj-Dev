@@ -1,4 +1,4 @@
-- name : test connection
+- name : test connections
   hosts : all
   tasks :
     - name : demo task
