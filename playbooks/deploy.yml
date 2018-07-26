@@ -1,6 +1,6 @@
 - name : deploying the student war file
   hosts : all
-  become_user : student
+  become_user : webserver
   vars :
     TOMCAT_LOC : /root/apache-tomcat-9.0.10
   tasks :
