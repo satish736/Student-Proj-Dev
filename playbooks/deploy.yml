@@ -18,6 +18,6 @@
        
      - name : print the url value
        get_url :
-            url : "{{$URL}}"
+            url : "{{URL}}"
             dest : "{{TOMCAT_LOC}}/webapps"
          
