@@ -18,6 +18,6 @@
        
      - name : print the url value
        get_url :
-         url : $HTTP_URL/$VER-$FINALVER.war
+         url : "{{url}}"
          dest : "{{TOMCAT_LOC}}/webapps"
          
