@@ -17,7 +17,7 @@
        with_items : "{{out.files}}"
        
      - name : print the url value
-       get_url :
-            url : "{{URL}}"
+        get_url :
+            url : "{{url}}"
             dest : "{{TOMCAT_LOC}}/webapps"
          
