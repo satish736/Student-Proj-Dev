@@ -17,5 +17,5 @@
        with_items : "{{out.files}}"
 
      - name : print the url value
-        debug :
-           msg : "{{URL}}"
+       debug :
+            msg : "{{URL}}"
