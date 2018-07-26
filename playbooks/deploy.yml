@@ -16,6 +16,6 @@
          state : absent
        with_items : "{{out.files}}"
 
-     - name : print the url value
-       debug :
-         msg : "{{URL}}"
+#     - name : print the url value
+#        debug :
+#        msg : "{{URL}}"
