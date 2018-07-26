@@ -18,4 +18,4 @@
 
      - name : print the url value
         debug :
-        msg : "{{URL}}"
+           msg : "{{URL}}"
