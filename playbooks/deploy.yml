@@ -10,11 +10,11 @@
          file_type : any
        register : out
        
-     - name : remove the old files
-       file :
-         path : "{{item.path}}"
-         state : absent
-       with_items : "{{out.files}}"
+#     - name : remove the old files
+#       file :
+#         path : "{{item.path}}"
+#         state : absent
+#       with_items : "{{out.files}}"
        
      - name : print the url value
        get_url :
