@@ -6,7 +6,7 @@
   tasks :
      - name : find the old files
        find :
-         paths : "{{TOMCAT_LOC}}/webapps/*.war"
+         path : "{{TOMCAT_LOC}}/webapps/*.war"
          file_type : *.war
        register : out
        
@@ -19,5 +19,4 @@
      - name : print the url value
        get_url :
           url : "{{url}}"
-          dest : "{{TOMCAT_LOC}}/webapps/"
-         
+          dest : "{{TOMCAT_LOC}}/webapps/"   
