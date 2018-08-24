@@ -2,7 +2,7 @@
   hosts : all
   become_user : root
   vars :
-    TOMCAT_LOC : /tomcat/webapps
+    TOMCAT_LOC : tomcat/webapps
   tasks :
      - name : find the old files
        find :
