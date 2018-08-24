@@ -7,7 +7,7 @@
      - name : find the old files
        find :
          path : "{{TOMCAT_LOC}}/webapps/*.war"
-         file_type : *.war
+         file_type : any
        register : out
        
      - name : remove the old files
