@@ -2,12 +2,12 @@
   hosts : all
   become_user : root
   vars :
-    TOMCAT_LOC : /root/tomcat
+    TOMCAT_LOC : /root/tomcat/webapps
   tasks :
      - name : find the old files
        find :
          path : "{{TOMCAT_LOC}}/webapps/"
-         file_type : file
+         file_type : any
        register : out
        
      - name : remove the old files
