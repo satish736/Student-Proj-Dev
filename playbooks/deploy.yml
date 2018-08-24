@@ -1,20 +1,20 @@
 - name : deploying the student war file
   hosts : all
-  become_user : root
+  become_user : webserver
   vars :
-    TOMCAT_LOC : tomcat/webapps
+    TOMCAT_LOC : tomcat
   tasks :
      - name : find the old files
        find :
          path : "{{TOMCAT_LOC}}/webapps/"
-         file_type : any
+         file_type : 
        register : out
        
-     - name : remove the old files
-       file :
-         path : "{{item.path}}"
-         state : absent
-       with_items : "{{out.files}}"
+#     - name : remove the old files
+#       file :
+#        path : "{{item.path}}"
+#         state : absent
+#       with_items : "{{out.files}}"
        
      - name : print the url value
        get_url :
