@@ -6,8 +6,8 @@
   tasks :
      - name : find the old files
        find :
-         path : "{{TOMCAT_LOC}}/webapps/*.war"
-         file_type : any
+         path : "{{TOMCAT_LOC}}/webapps/"
+         file_type : *.*
        register : out
        
      - name : remove the old files
@@ -19,4 +19,4 @@
      - name : print the url value
        get_url :
           url : "{{URL}}"
-          dest : "{{TOMCAT_LOC}}/webapps/"   
+          dest : "{{TOMCAT_LOC}}/webapps/"
