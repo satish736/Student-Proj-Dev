@@ -14,8 +14,7 @@
        file :
         path : "{{item.path}}"
         state : absent
-       with_items : "{{out.files}}"
-       
+     
      - name : print the url value
        get_url :
            url : "{{url}}"
