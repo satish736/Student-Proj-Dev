@@ -17,5 +17,5 @@
      
      - name : print the url value
         get_url :
-            url : "{{url}}"
+            url : "{{ url }}"
            dest : "{{TOMCAT_LOC}}/webapps/"
