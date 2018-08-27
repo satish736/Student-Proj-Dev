@@ -13,7 +13,7 @@
      - name : remove the old files
        file :
         path : "{{item.path}}"
-         state : absent
+        state : absent
        with_items : "{{out.files}}"
        
      - name : print the url value
