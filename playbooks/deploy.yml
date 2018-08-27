@@ -1,6 +1,6 @@
 - name : deploying the student war file
   hosts : all
-  become : yes
+  become_user : root
   vars :
     TOMCAT_LOC : tomcat
   tasks :
